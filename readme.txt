@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Enriches your WordPress with better accessibility options, such as nicely Skiplinks, Font-Sizer, Constrast changer, Custom Toolbar & and many other options.
+Enriches your WordPress with better accessibility options such as nicely Skiplinks, Font-Sizer, Contrast changer, Custom Toolbar and many other options.
 
 == Installation ==
 
@@ -29,9 +29,37 @@ Enriches your WordPress with better accessibility options, such as nicely Skipli
 6. Links
 7. Images
 
+== Frequently Asked Questions ==
+
+= How do I display the Toolbar? =
+
+The Toolbar can be displayed in two ways:
+
+A. by activating the Fixed Toolbar: to do so you will need to first activate the Toolbar option and then activate the Fixed Toolbar option. the Fixed Toolbar will automatically be displayed on your site.
+
+B. By using the Shortcode provided under the Toolbar option.
+
+= What about foo bar? =
+
+Answer to foo bar dilemma.
+
+== A brief Markdown Example ==
+
+Ordered list:
+
+1. Some feature
+1. Another feature
+1. Something else about the plugin
+
+Unordered list:
+
+* something
+* something else
+* third thing
+
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
 * Adding screenshots
 * Fixing jQuery issue with the Font-Sizer script
 
