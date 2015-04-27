@@ -1,10 +1,8 @@
 <?php
 /*
  * Plugin: Accessible Poetry
- * Version: 1.0.0 alpha
+ * Version: 1.0.1
  * Author: Amit Moreno
- *
- * Page: Image Alt (inc/acp_imagealt.php)
  */
 
 function acp_imagealt_scripts() { ?>

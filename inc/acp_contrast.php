@@ -1,12 +1,9 @@
 <?php
 /*
  * Plugin: Accessible Poetry
- * Version: 1.0.0 alpha
+ * Version: 1.0.1
  * Author: Amit Moreno
- *
- * Page: Image Alt (inc/acp_contrast.php)
  */
-
 function acp_contrast_scripts() {
 	
 	$bright = get_option( 'acp_contrast_bright', false );
@@ -30,7 +27,6 @@ body.bright a {
 	color:<?php echo $bright_lnk; ?> !important;
 }
 <?php endif; ?>
-
 body.dark {
 	background: <?php if( $dark_bg ){echo $dark_bg;}else{echo '#333';} ?> !important;
 	color: <?php if( $dark_txt ){echo $dark_txt;}else{echo '#fff';} ?> !important;
@@ -42,19 +38,47 @@ body.dark a {
 <script type="text/javascript">
 jQuery(window).load(function(){
 	jQuery(document).ready(function($) {
+		var acp_dark = readCookie('acp_dark');
+		if ( acp_dark ) {
+			$( 'body' ).removeClass( 'bright' ).addClass( 'dark' );
+		}
 	 	$( '#dark_class' ).click( function () {
 	 		$( 'body' ).removeClass( 'bright' ).addClass( 'dark' );
+	 		//valid for 24h
+	 		createCookie('acp_dark','dark',1);
 		});
-
 		$( '#dark_remove' ).click( function () {
+			eraseCookie( 'acp_dark' );
 			$( 'body' ).removeClass( 'dark' ).addClass( 'bright' );
-		});     
+		});
+		function createCookie(name,value,days) {
+		    if (days) {
+		        var date = new Date();
+		        date.setTime(date.getTime()+(days*24*60*60*1000));
+		        var expires = "; expires="+date.toGMTString();
+		    }
+		    else var expires = "";
+		    document.cookie = name+"="+value+expires+"; path=/";
+		}
+		function readCookie(name) {
+		    var nameEQ = name + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i=0;i < ca.length;i++) {
+		        var c = ca[i];
+		        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		    }
+		    return null;
+		}
+		function eraseCookie(name) {
+		    createCookie(name,"",-1);
+		}		
+     
 	});
 });
 </script>
 <?php
 }
-
 function acp_contrast_nav() {
 	if( get_option( 'acp_contrast', false ) ) : ?>
 <nav id="acp_contrast_nav" role="navigation">
@@ -69,10 +93,8 @@ function acp_contrast_nav() {
 </nav>
 <?php endif;
 }
-
 if( get_option( 'acp_contrast', false ) ) {
 	add_action( 'wp_head', 'acp_contrast_scripts');
 	add_shortcode( 'acp_contrast', 'acp_contrast_nav' );
 }
-
 /* Beautiful friend */

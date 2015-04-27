@@ -13,6 +13,16 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Enriches your WordPress with better accessibility options such as nicely Skiplinks, Font-Sizer, Contrast changer, Custom Toolbar and many other options.
 
+ So what can you find in this plugin?
+ 
+ * Skiplinks - Beautiful Skiplinks that gives your users the ability to skip between the main areas via the keyboard.
+ * Font Sizer - Gives you the ability to change the font size.
+ * Contrast - Let you user change the contrast of the colors (you can define your own colors if you want).
+ * Toolbar - Display nice Toolbar with Contrast and/or Font Sizer options. can be displayed automatically with the built-in Fixed Toolbar or by using a PHP function or a shortcode.
+ * Add role=link to all the <a> tags.
+ * Force open links in current tab (remove the "target" attribute from all links)
+ * Force ALT attribute to all images
+
 == Installation ==
 
 1. Download the link.
@@ -39,27 +49,10 @@ A. by activating the Fixed Toolbar: to do so you will need to first activate the
 
 B. By using the Shortcode provided under the Toolbar option.
 
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
 == Changelog ==
 
 = 1.0.1 =
 * Adding screenshots
 * Fixing jQuery issue with the Font-Sizer script
+* Add a cookie so the browser will remember if the user press on one of the Contrast options
 

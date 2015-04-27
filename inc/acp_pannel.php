@@ -56,9 +56,9 @@ function acp_page_callback() {
 	
 	<header class="acp-field" tabindex="0">
 		<h1><?php _e('Welcome to Accessible Poetry!', 'acp');?></h1>
-		<div class="plugin-version"><span><?php _e('Version', 'acp');?>: 1.0.0</span></div>
+		<div class="plugin-version"><span><?php _e('Version', 'acp');?>: 1.0.1</span></div>
 		<p class="lead"><?php _e('Here you will find options to perform a better accessibility WordPress website.', 'acp');?></p>
-		<p>This plugin is provided by <a href="http://www.Amitmoreno.com/">Amit Moreno.</a> <?php _e('Please visit our', 'acp');?> <a href="#" role="link" aria-label="<?php _e('Go to our Plugin Page', 'acp');?>"><?php _e('Plugin Page', 'acp');?></a> <?php _e('and ', 'acp');?><a href="#" role="link" aria-label="<?php _e('Rate Us on our Plugin Page', 'acp');?>"><?php _e('Rate Us', 'acp');?></a>.</p>
+		<p>This plugin is provided by <a href="http://www.Amitmoreno.com/">Amit Moreno.</a> <?php _e('Please visit our', 'acp');?> <a href="https://wordpress.org/plugins/accessible-poetry/" role="link" aria-label="<?php _e('Go to our Plugin Page', 'acp');?>"><?php _e('Plugin Page', 'acp');?></a> <?php _e('and ', 'acp');?><a href="https://wordpress.org/support/view/plugin-reviews/accessible-poetry" role="link" aria-label="<?php _e('Rate Us on our Plugin Page', 'acp');?>"><?php _e('Rate Us', 'acp');?></a>.</p>
 	</header>
 	
 	<section>
