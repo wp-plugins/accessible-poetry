@@ -28,3 +28,10 @@ Enriches your WordPress with better accessibility options, such as nicely Skipli
 5. Contrast
 6. Links
 7. Images
+
+== Changelog ==
+
+= 1.0 =
+* Adding screenshots
+* Fixing jQuery issue with the Font-Sizer script
+
