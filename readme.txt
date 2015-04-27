@@ -22,7 +22,6 @@ Enriches your WordPress with better accessibility options, such as nicely Skipli
 
 == Screenshots ==
 
-1. Plugin banner
 2. Skiplinks
 3. Font Sizer
 4. Toolbar
