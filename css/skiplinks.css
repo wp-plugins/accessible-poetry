@@ -1,0 +1,45 @@
+ul#acp_skiplinks {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul#acp_skiplinks > li > a {
+    display:block;
+    width:14em;
+    min-height:48px;
+    border-radius:0 0 .3125em .3125em;
+    background:#eee;
+    text-align:center;
+    box-shadow:0 2px 0 rgba(204,204,204,1.0);
+    line-height:3.5em;
+    margin-left:-7em;
+    position: fixed;
+    z-index: 99999;
+    left:50%;
+    top:-68px;
+    -webkit-transition: all 1s ease;  
+       -moz-transition: all 1s ease;  
+	    -ms-transition: all 1s ease;  
+		 -o-transition: all 1s ease;  
+		 	transition: all 1s ease;
+}
+
+ul#acp_skiplinks > li > a:focus {
+    top:15px;
+    outline:none;
+    text-decoration:underline;
+}
+
+ul#acp_skiplinks > li > a:hover {
+   text-decoration: underline;
+}
+
+ul#acp_skiplinks.left > li > a {
+	left: 15px;
+	margin-left: auto;
+}
+ul#acp_skiplinks.right > li > a {
+	right: 15px;
+	margin-left: auto;
+}
