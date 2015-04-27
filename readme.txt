@@ -20,6 +20,4 @@ Enriches your WordPress with better accessibility options, such as nicely Skipli
 3. Activate the plugin.
 4. Go to "Tools > Accessible Poetry" for more details.
 
-== Screenshots ==
 
-1. Plugin banner
