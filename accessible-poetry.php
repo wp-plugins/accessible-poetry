@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Accessible Poetry
  * Plugin URI: http://acp.amitmoreno.com/
- * Description: Accessibility plugin for WordPress.
- * Version: 1.0.1 beta
+ * Description: Enriches your WordPress with better accessibility options, such as nicely Skiplinks, Font-Sizer, Constrast changer, Custom Toolbar & and many other options.
+ * Version: 1.0.1
  * Author: Amit Moreno
  * Author URI: http://www.amitmoreno.com/
  * Text Domain: acp
