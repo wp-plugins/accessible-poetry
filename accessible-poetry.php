@@ -3,7 +3,7 @@
  * Plugin Name: Accessible Poetry
  * Plugin URI: http://acp.amitmoreno.com/
  * Description: Enriches your WordPress with better accessibility options, such as nicely Skiplinks, Font-Sizer, Constrast changer, Custom Toolbar & and many other options.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Amit Moreno
  * Author URI: http://www.amitmoreno.com/
  * Text Domain: acp
@@ -25,8 +25,7 @@ add_action( 'plugins_loaded', 'acp_locale' );
 // The option page
 include 'inc/acp_pannel.php';
 
-// Skiplinks
-include 'inc/acp_skiplinks.php';
+
 // Toolbar
 include 'inc/acp_toolbar.php';
 // Font Sizer
@@ -39,5 +38,8 @@ include 'inc/acp_rolelinks.php';
 include 'inc/acp_removetarget.php';
 // Add alt to all images
 include 'inc/acp_imagealt.php';
+
+// Skiplinks
+include 'inc/acp_skiplinks.php';
 
 /* Beautiful friend */

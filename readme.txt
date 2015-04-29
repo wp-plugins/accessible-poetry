@@ -3,9 +3,9 @@
 Contributors: digisphere
 Tags: Accessibility
 Requires at least: 4.0
-Tested up to: 4.2
+Tested up to: 4.2.1
 Stable tag: 1.0.1
-Version: 1.0.1
+Version: 1.0.2
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ Enriches your WordPress with better accessibility options such as nicely Skiplin
  * Font Sizer - Gives you the ability to change the font size.
  * Contrast - Let you user change the contrast of the colors (you can define your own colors if you want).
  * Toolbar - Display nice Toolbar with Contrast and/or Font Sizer options. can be displayed automatically with the built-in Fixed Toolbar or by using a PHP function or a shortcode.
- * Add role=link to all the <a> tags.
+ * Add role=link to all the /<a/> tags.
  * Force open links in current tab (remove the "target" attribute from all links)
  * Force ALT attribute to all images
 
@@ -55,4 +55,11 @@ B. By using the Shortcode provided under the Toolbar option.
 * Adding screenshots
 * Fixing jQuery issue with the Font-Sizer script
 * Add a cookie so the browser will remember if the user press on one of the Contrast options
+
+= 1.0.2 =
+* The Skiplinks moved below the Fixed Toolbar so the user could land first on them
+* A new option was added to the Skiplinks that gives the ability to use different links for the Skiplinks on the Home Page.
+* Fixing the shortcode so they will be return at the exact place.
+* Some CSS Styles was given to the shorted buttons.
+* The plugin was translated to Hebrew.
 

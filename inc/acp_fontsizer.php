@@ -2,21 +2,35 @@
 /* Font Sizer */
 
 function acp_fontsizer_nav() {
-	if( get_option( 'acp_fontsizer', false ) ) : ?>
-<nav id="acp_fontsizer_nav" role="navigation">
-	<ul id="acp_fontsizer">
-		<div id="acp-fontsizer" class="item">
-			<label for="acp-fontsizer">Font Size:</label>
-			<button class="small-letter">a</button>
-			<button class="big-letter">A</button>
-		</div>
-	</ul>
-</nav>
-<?php endif;
+	if( get_option( 'acp_fontsizer', false ) ) {
+		$html = '<nav id="acp_fontsizer_nav" role="navigation">';
+			$html .= '<ul id="acp_fontsizer">';
+				$html .= '<div id="acp-fontsizer" class="item">';
+					$html .= '<label for="acp-fontsizer">' . __('Font Size:', 'acp') . '</label>';
+					$html .= '<button class="acp-btn small-letter">' . __('a', 'acp') . '</button>';
+					$html .= '<button class="acp-btn big-letter">' . __('A', 'acp') . '</button>';
+				$html .= '</div>';
+			$html .= '</ul>';
+		$html .= '</nav>';
+		
+		return $html;
+	}
 }
 
 function acp_fontsizer_scripts() { ?>
 <!-- Accessible Poetry Font Sizer -->
+<style>
+.acp-btn {
+	background: #fff;
+	border: 1px solid #ccc;
+	line-height: 32px;
+	padding: 0 8px;
+	border-radius: 3px;
+	color: #888;
+	text-transform: none;
+	margin-left: 2px;
+}
+</style>
 <script type="text/javascript">
 jQuery(window).load(function(){
 	jQuery(function($){

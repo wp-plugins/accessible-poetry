@@ -12,11 +12,24 @@ function acp_register_skiplinks_style() {
 	wp_enqueue_style( 'skiplinks' );
 }
 function acp_register_skiplinks_menu() {
+	
 	register_nav_menu( 'skiplinks', __( 'Skiplinks', 'acp' ) );
+	
+	$hp_skiplinks = get_option( 'acp_skiplinks_home', false );
+	
+	if( $hp_skiplinks ) {
+		register_nav_menu( 'skiplinks-home', __( 'Homepage Skiplinks', 'acp' ) );
+	}
 }
 function acp_skiplinks_after_body() {
 	
-	$menu_name = 'skiplinks';
+	$hp_skiplinks = get_option( 'acp_skiplinks_home', false );
+	
+	if( $hp_skiplinks ) {
+		$menu_name = ( is_home() || is_front_page() )  ? 'skiplinks-home' : 'skiplinks';
+	}else {
+		$menu_name = 'skiplinks';
+	}
 
     if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
 		
@@ -34,6 +47,7 @@ function acp_skiplinks_after_body() {
     } else {
 		$menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
     }
+    
 ?>
 <!-- Accessible Poetry Skiplinks -->
 <script type="text/javascript">
